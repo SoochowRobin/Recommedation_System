@@ -1,19 +1,13 @@
-
-/**
- * Base class provided by Duke University
- * 
- * @author Robin Chen
- * @version 1.0
- */
+// PlainRater class is used to store rater and his/her movies and rating
 
 import java.util.*;
 
-public class Rater {
-    private String myID;
-    private ArrayList<Rating> myRatings;
-    public Rater(){}
+public class PlainRater extends Rater {
+    private final String myID;
+    private final ArrayList<Rating> myRatings;
 
-    public Rater(String id) {
+    public PlainRater(String id) {
+        super();
         myID = id;
         myRatings = new ArrayList<Rating>();
     }
@@ -23,12 +17,12 @@ public class Rater {
     }
 
     public boolean hasRating(String item) {
-        for(int k=0; k < myRatings.size(); k++){
-            if (myRatings.get(k).getItem().equals(item)){
+        for (Rating myRating : myRatings) {
+            if (myRating.getItem().equals(item)) {
                 return true;
             }
         }
-        
+
         return false;
     }
 
@@ -37,12 +31,12 @@ public class Rater {
     }
 
     public double getRating(String item) {
-        for(int k=0; k < myRatings.size(); k++){
-            if (myRatings.get(k).getItem().equals(item)){
-                return myRatings.get(k).getValue();
+        for (Rating myRating : myRatings) {
+            if (myRating.getItem().equals(item)) {
+                return myRating.getValue();
             }
         }
-        
+
         return -1;
     }
 
@@ -52,10 +46,10 @@ public class Rater {
 
     public ArrayList<String> getItemsRated() {
         ArrayList<String> list = new ArrayList<String>();
-        for(int k=0; k < myRatings.size(); k++){
-            list.add(myRatings.get(k).getItem());
+        for (Rating myRating : myRatings) {
+            list.add(myRating.getItem());
         }
-        
+
         return list;
     }
 }
