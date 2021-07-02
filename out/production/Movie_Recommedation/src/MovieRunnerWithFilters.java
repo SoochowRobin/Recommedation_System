@@ -200,14 +200,14 @@ public class MovieRunnerWithFilters {
     }
 
 
-    public static void main(String[] args) {
-        MovieRunnerWithFilters test = new MovieRunnerWithFilters();
-//        test.printAverageRatings();
-//        test.printAverageRatingsByYearAfter();
-//        test.printAverageRatingsByGenre();
-//        test.printAverageRatingsByMinutes();
-//        test.printAverageRatingsByDirectors();
-//        test.printAverageRatingsByYearAfterAndGenre();
-        test.printAverageRatingsByDirectorsAndMinutes();
-    }
+//    public static void main(String[] args) {
+//        MovieRunnerWithFilters test = new MovieRunnerWithFilters();
+////        test.printAverageRatings();
+////        test.printAverageRatingsByYearAfter();
+////        test.printAverageRatingsByGenre();
+////        test.printAverageRatingsByMinutes();
+////        test.printAverageRatingsByDirectors();
+////        test.printAverageRatingsByYearAfterAndGenre();
+//        test.printAverageRatingsByDirectorsAndMinutes();
+//    }
 }
