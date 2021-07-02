@@ -9,7 +9,7 @@ public class FirstRatings {
     public ArrayList<Movie> loadMovies(String filename){
         ArrayList<Movie> movies = new ArrayList<>();
         // FileResource is built-in function in edu.duke package
-        FileResource fr = new FileResource("data/" +filename);
+        FileResource fr = new FileResource(filename);
         // get all movies in the file
         CSVParser movieParser = fr.getCSVParser();
         // create movie object for each movie and store them in the arraylist
