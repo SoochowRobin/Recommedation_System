@@ -174,9 +174,10 @@ public class FirstRatings {
         System.out.println("unique number is " + unique.size());
     }
 
-    public static void main(String[] args) {
-        FirstRatings test = new FirstRatings();
-        test.testLoadMovies("ratedmoviesfull.csv");
-        test.testLoadRaters("ratings.csv");
-    }
+    // comment out this part, this part used to test and get result of step_one
+//    public static void main(String[] args) {
+//        FirstRatings test = new FirstRatings();
+//        test.testLoadMovies("ratedmoviesfull.csv");
+//        test.testLoadRaters("ratings.csv");
+//    }
 }
