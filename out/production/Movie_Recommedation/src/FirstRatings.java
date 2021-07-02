@@ -56,8 +56,9 @@ public class FirstRatings {
             }
 
             if (!exist){
-                Rater currRater = new PlainRater(raterId);
-//              Rater currRater = new EfficientRater(raterId);
+//                Rater currRater = new PlainRater(raterId);
+                // use EfficientRater here
+                Rater currRater = new EfficientRater(raterId);
                 currRater.addRating(movieId, rating);
                 raters.add(currRater);
                 // Add the rater's ID to the "existed" String.
@@ -175,9 +176,9 @@ public class FirstRatings {
     }
 
     // comment out this part, this part used to test and get result of step_one
-//    public static void main(String[] args) {
-//        FirstRatings test = new FirstRatings();
-//        test.testLoadMovies("ratedmoviesfull.csv");
-//        test.testLoadRaters("ratings.csv");
-//    }
+    public static void main(String[] args) {
+        FirstRatings test = new FirstRatings();
+        test.testLoadMovies("ratedmoviesfull.csv");
+        test.testLoadRaters("ratings.csv");
+    }
 }

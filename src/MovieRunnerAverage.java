@@ -58,7 +58,7 @@ public class MovieRunnerAverage {
         System.out.println("The average rating for " + movieTitle + " is " + value + ".");
     }
 
-    // test start place
+//     test start place
 //    public static void main(String[] args) {
 //        MovieRunnerAverage test = new MovieRunnerAverage();
 //        test.printAverageRatings();

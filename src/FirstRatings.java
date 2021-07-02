@@ -56,8 +56,9 @@ public class FirstRatings {
             }
 
             if (!exist){
-                Rater currRater = new PlainRater(raterId);
-//              Rater currRater = new EfficientRater(raterId);
+//                Rater currRater = new PlainRater(raterId);
+                // use EfficientRater here
+                Rater currRater = new EfficientRater(raterId);
                 currRater.addRating(movieId, rating);
                 raters.add(currRater);
                 // Add the rater's ID to the "existed" String.

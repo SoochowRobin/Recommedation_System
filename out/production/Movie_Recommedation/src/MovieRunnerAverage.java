@@ -25,6 +25,8 @@ public class MovieRunnerAverage {
         System.out.println("There are " + sr.getMovieSize() + " movies in the file.");
         System.out.println("There are " + sr.getRaterSize() + " raters in the file.");
 
+        // when we want to get how many movies have more than numRaings, we need to
+        // do some modification here
         int numRating = 12;
         ArrayList<Rating> ratings = sr.getAverageRatings(numRating);
         // prepare to print them in a sorted way
@@ -56,11 +58,10 @@ public class MovieRunnerAverage {
         System.out.println("The average rating for " + movieTitle + " is " + value + ".");
     }
 
-
-    // test start place
-    public static void main(String[] args) {
-        MovieRunnerAverage test = new MovieRunnerAverage();
-        test.printAverageRatings();
-
-    }
+//     test start place
+//    public static void main(String[] args) {
+//        MovieRunnerAverage test = new MovieRunnerAverage();
+//        test.printAverageRatings();
+//
+//    }
 }
